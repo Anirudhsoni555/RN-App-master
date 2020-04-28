@@ -1,15 +1,15 @@
-import React, {FC, useState, useEffect} from 'react';
-import {Container, Header, Text, Button, Icon, Content} from 'native-base';
+import React, { FC, useState, useEffect } from 'react';
+import { Container, Header, Text, Button, Icon, Content } from 'native-base';
 import Geolocation from '@react-native-community/geolocation';
-import MapView, {PROVIDER_GOOGLE, Region} from 'react-native-maps';
-import {useUserContext} from '../contexts/User';
-import {useHistory} from 'react-router-native';
-import {StyleSheet} from 'react-native';
+import MapView, { PROVIDER_GOOGLE, Region } from 'react-native-maps';
+import { useUserContext } from '../contexts/User';
+import { useHistory } from 'react-router-native';
+import { StyleSheet } from 'react-native';
 
 export const Welcome: FC = () => {
   const [name, setName] = useState('');
-  const {push} = useHistory();
-  const {getActiveSession, getSession} = useUserContext();
+  const { push } = useHistory();
+  const { getActiveSession, getSession } = useUserContext();
   const [location, setLocation] = useState({
     latitude: 37.78825,
     longitude: -122.4324,
@@ -104,7 +104,7 @@ export const Welcome: FC = () => {
               ],
             },
           ]}
-          style={{height: '100%', width: '100%'}}
+          style={{ height: '100%', width: '100%' }}
           region={region}
           onRegionChange={setRegion}
           showsUserLocation

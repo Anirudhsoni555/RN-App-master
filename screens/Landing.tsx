@@ -1,18 +1,10 @@
-import React, {FC} from 'react';
-import {
-  Container,
-  Header,
-  Text,
-  Body,
-  Content,
-  Button,
-  Icon,
-} from 'native-base';
-import {useHistory} from 'react-router-native';
-import {StyleSheet} from 'react-native';
+import React, { FC } from 'react';
+import { Container, Text, Body, Content, Button, Icon } from 'native-base';
+import { useHistory } from 'react-router-native';
+import { StyleSheet } from 'react-native';
 
 export const Landing: FC = () => {
-  const {push} = useHistory();
+  const { push } = useHistory();
 
   return (
     <Container>
@@ -34,7 +26,7 @@ export const Landing: FC = () => {
         </Button>
         <Button
           onPress={() => push('/signup')}
-          style={[styles.centerText, {marginTop: 20}]}
+          style={[styles.centerText, { marginTop: 20 }]}
           rounded
           info>
           <Icon name="md-person-add" />

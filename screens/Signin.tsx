@@ -1,6 +1,6 @@
-import React, {FC, useState, useCallback, useEffect} from 'react';
-import {Text, StyleSheet} from 'react-native';
-import {object, string} from 'yup';
+import React, { FC, useState, useCallback, useEffect } from 'react';
+import { Text, StyleSheet } from 'react-native';
+import { object, string } from 'yup';
 import {
   Container,
   Header,
@@ -14,8 +14,8 @@ import {
   Label,
   Input,
 } from 'native-base';
-import {useUserContext} from '../contexts/User';
-import {useHistory} from 'react-router-native';
+import { useUserContext } from '../contexts/User';
+import { useHistory } from 'react-router-native';
 
 const SignInSchema = object().shape({
   email: string().email().required(),
@@ -23,8 +23,8 @@ const SignInSchema = object().shape({
 });
 
 export const SignIn: FC = () => {
-  const {push, goBack} = useHistory();
-  const {validateUser, setSession} = useUserContext();
+  const { push, goBack } = useHistory();
+  const { validateUser, setSession } = useUserContext();
   const [isFormValid, setIsFormValid] = useState(false);
   const [maskPassword, setMaskPassword] = useState({
     password: true,
@@ -38,7 +38,7 @@ export const SignIn: FC = () => {
   });
   const setFormDataByKey = useCallback(
     (key: 'email' | 'password') => (value: string) => {
-      setFormData((data) => ({...data, [key]: value}));
+      setFormData((data) => ({ ...data, [key]: value }));
     },
     [],
   );

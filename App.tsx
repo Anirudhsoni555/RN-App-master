@@ -8,16 +8,16 @@
  * @format
  */
 
-import React, {useEffect} from 'react';
-import {Container} from 'native-base';
+import React, { useEffect } from 'react';
+import { Container } from 'native-base';
 import SplashScreen from 'react-native-splash-screen';
-import {NativeRouter, Route} from 'react-router-native';
-import {SignUp} from './screens/Signup';
-import {SignIn} from './screens/Signin';
-import {Welcome} from './screens/Welcome';
-import {UserContextProvider} from './contexts/User';
-import {Landing} from './screens/Landing';
-import {StatusBar, Platform} from 'react-native';
+import { NativeRouter, Route } from 'react-router-native';
+import { SignUp } from './screens/Signup';
+import { SignIn } from './screens/Signin';
+import { Welcome } from './screens/Welcome';
+import { UserContextProvider } from './contexts/User';
+import { Landing } from './screens/Landing';
+import { StatusBar, Platform } from 'react-native';
 
 const App = () => {
   useEffect(() => {
