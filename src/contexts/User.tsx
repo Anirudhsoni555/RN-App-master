@@ -6,7 +6,7 @@ import React, {
   useEffect,
   useContext,
 } from 'react';
-import {AsyncStorage} from 'react-native';
+import { AsyncStorage } from 'react-native';
 
 interface User {
   fullName?: string;
@@ -14,8 +14,8 @@ interface User {
   password?: string;
 }
 
-type SessionPayload = {isLoggedin: boolean; fullName: string};
-type Session = {[key: string]: SessionPayload};
+type SessionPayload = { isLoggedin: boolean; fullName: string };
+type Session = { [key: string]: SessionPayload };
 type CreateUser = (val: User) => User;
 type GetUserByMail = (email: string) => User;
 type SetSession = (val: User) => Session;
@@ -74,7 +74,7 @@ export const UserContextProvider: FC<{}> = (props) => {
   }, [activeSession]);
 
   const create = useCallback<CreateUser>((val) => {
-    setUsers((existingUsers) => ({...existingUsers, [val.email]: val}));
+    setUsers((existingUsers) => ({ ...existingUsers, [val.email]: val }));
     return val;
   }, []);
   const getUserByEmail = useCallback<GetUserByMail>(
@@ -93,7 +93,7 @@ export const UserContextProvider: FC<{}> = (props) => {
   );
   const setSession = useCallback<SetSession>((val) => {
     const value = {
-      [val.email]: {isLoggedin: true, fullName: val.fullName ?? ''},
+      [val.email]: { isLoggedin: true, fullName: val.fullName ?? '' },
     };
     setSessionData(value);
     setActiveSession(val.email);
