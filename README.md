@@ -58,4 +58,4 @@ Practice App for best in class tech and RN features.
 * Camera Access
   * Barcode Scanning abilities.
   
-* Add RN Brides to call Android Native Methods
+* Add RN Bridges to call Android Native Methods
