@@ -127,10 +127,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     color: 'white',
-<<<<<<< HEAD
-=======
     fontFamily: 'AntDesign',
->>>>>>> master
   },
   subheader: {
     display: 'flex',
