@@ -59,3 +59,5 @@ Practice App for best in class tech and RN features.
   * Barcode Scanning abilities.
   
 * Add RN Bridges to call Android Native Methods
+
+* Push Notifications.
