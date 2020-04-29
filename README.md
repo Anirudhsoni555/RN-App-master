@@ -4,13 +4,13 @@ Practice App for best in class tech and RN features.
 
 # About Project
 
--> This project is built using react-native-cli and uses RN as base.
+This project is built using react-native-cli and uses RN as base.
 
 #### Scripts Available
 
 | Script                 |                Android |  iOS      |
 |------------------------|------------------------|-----------|
-| Run with metro bundler |  yarn ios              |  yarn ios |
+| Run with metro bundler |  yarn android          |  yarn ios |
 | Independent bundler    | yarn start             |  yarn start |
 | Install dependencies   | yarn install           |  cd ios && pod install |
 | Create Executable      | yarn release:android.  | yarn release:ios |
@@ -59,3 +59,15 @@ Practice App for best in class tech and RN features.
   * Barcode Scanning abilities.
   
 * Add RN Bridges to call Android Native Methods
+
+* Push Notifications.
+
+* NFC.
+
+* RFID Authentication.
+
+* File Sharing.
+
+* Document Loading.
+
+* Graphql Integration.
