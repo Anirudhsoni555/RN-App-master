@@ -4,7 +4,7 @@ Practice App for best in class tech and RN features.
 
 # About Project
 
--> This project is built using react-native-cli and uses RN as base.
+This project is built using react-native-cli and uses RN as base.
 
 #### Scripts Available
 
@@ -61,3 +61,13 @@ Practice App for best in class tech and RN features.
 * Add RN Bridges to call Android Native Methods
 
 * Push Notifications.
+
+* NFC.
+
+* RFID Authentication.
+
+* File Sharing.
+
+* Document Loading.
+
+* Graphql Integration.
