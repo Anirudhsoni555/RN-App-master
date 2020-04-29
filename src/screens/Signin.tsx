@@ -53,6 +53,8 @@ export const SignIn: FC = () => {
     if (user) {
       setSession!(user);
       push('/welcome');
+    } else {
+      alert('Invalid credentials');
     }
   }, [formData.email, formData.password, push, setSession, validateUser]);
 
