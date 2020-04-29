@@ -10,7 +10,7 @@ Practice App for best in class tech and RN features.
 
 | Script                 |                Android |  iOS      |
 |------------------------|------------------------|-----------|
-| Run with metro bundler |  yarn ios              |  yarn ios |
+| Run with metro bundler |  yarn android          |  yarn ios |
 | Independent bundler    | yarn start             |  yarn start |
 | Install dependencies   | yarn install           |  cd ios && pod install |
 | Create Executable      | yarn release:android.  | yarn release:ios |
